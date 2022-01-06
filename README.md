@@ -1,15 +1,15 @@
 # Red-Team-vs-Blue-Team
-UGOCHUKWU MMONU
+## UGOCHUKWU MMONU
 
 01/04/2022
 
-Overview
+**Overview**
 
 For this project, I was tasked to act as an offensive security, Red Team Member, to exploit a vulnerable Capstone VM. I was also tasked to use Kibana to analyze activity logs taken during the Red Team attack. I analyzed these logs, and used the data collected to develop ideas for new alerts that can improve my monitoring as a Blue Team member.
 
-Findings
+**Findings**
 
-Day 1 
+## Day 1 
 Discover the IP address of the Linux Webserver
 
 <img width="723" alt="Screen Shot 2021-12-07 at 8 47 18 PM" src="https://user-images.githubusercontent.com/56059854/148139007-c060f86b-6038-43f0-9605-2a2f1c22a964.png">
@@ -34,10 +34,10 @@ Brute force the password for the hidden directory using the hydra command:
 
 Break the hashed password with the crack station website
 
-   Username: ryan
-   password: linux4u
+ # Username: ryan
+ # password: linux4u
 
-Connect to the server via WEBDAV
+**Connect to the server via WEBDAV**
 
 To connect to the webserver i First opened up a file manager window
 
