@@ -13,3 +13,11 @@ Day 1
 Discover the IP address of the Linux Webserver
 
 <img width="723" alt="Screen Shot 2021-12-07 at 8 47 18 PM" src="https://user-images.githubusercontent.com/56059854/148139007-c060f86b-6038-43f0-9605-2a2f1c22a964.png">
+
+Locate the hidden directory on the web
+
+The Hidden directory was found by adjusting theURL of the company's Webpage to gain access to the hidden directory. Within the directory was a document giving instructions on how to access the company's webdav server.
+
+![68747470733a2f2f692e706f7374696d672e63632f44776d57726763512f696e2d7468652d7365637265742d666f6c6465722e706e67](https://user-images.githubusercontent.com/56059854/148312723-4826808f-ed45-4dce-a914-923694faf7d0.png)
+
+![68747470733a2f2f692e706f7374696d672e63632f3843366a337a396a2f6c6f67696e2d706167652d666f722d7365637265742d666f6c6465722e706e67](https://user-images.githubusercontent.com/56059854/148312665-5cba713e-f39a-4c7c-a2fe-ea1e3638f1f4.png)
