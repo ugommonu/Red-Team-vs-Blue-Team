@@ -34,8 +34,8 @@ Brute force the password for the hidden directory using the hydra command:
 
 Break the hashed password with the crack station website
 
- ### Username: ryan
- ### password: linux4u
+ *Username: ryan*
+ *password: linux4u*
 
 **Connect to the server via WEBDAV**
 
