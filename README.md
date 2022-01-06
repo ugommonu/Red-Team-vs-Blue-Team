@@ -50,4 +50,15 @@ upload a PHP reverse shell payload
 <img width="1027" alt="Screen Shot 2021-12-08 at 9 32 01 PM" src="https://user-images.githubusercontent.com/56059854/148317824-6e59d14b-2c2d-4f70-962d-00cd1edcb142.png">
 
 
+a standard multi/handler exploit was used set up the payload. i was able to drag and drop the PHP payload file into the WebDav folder. the Meterpreter session was opened by clicking on the PHP file. 
+
+<img width="880" alt="Screen Shot 2021-12-08 at 9 34 32 PM" src="https://user-images.githubusercontent.com/56059854/148319265-2acb2293-83b1-4d3c-8954-ec8603098046.png">
+
+METERPRETER SESSION
+
+<img width="1147" alt="Screen Shot 2021-12-08 at 10 36 17 PM" src="https://user-images.githubusercontent.com/56059854/148319377-1477e6a6-3b94-4b20-9020-0eb5aaa9d12e.png">
+
+
+Capture the flag
+
 
