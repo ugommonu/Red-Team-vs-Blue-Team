@@ -74,3 +74,30 @@ Capture the flag
 Identify the traffic between you machine and the web machine
 
 - When did the interaction occur?
+
+<img width="829" alt="Screen Shot 2022-01-10 at 4 23 08 PM" src="https://user-images.githubusercontent.com/56059854/148848512-b305a08c-fb75-4d8b-97d4-046bc016af24.png">
+
+
+- What responses did the victim send back?
+
+<img width="825" alt="Screen Shot 2022-01-10 at 4 23 54 PM" src="https://user-images.githubusercontent.com/56059854/148848594-846f57bb-5088-46e0-8910-1a593ae4ce44.png">
+
+
+- What data is concerning from the blue team perspective?
+
+ The large amount of error codes looks very concerning, this is evidence of attack attempts on th network. This indicates a sign of bruteforce attack
+ 
+ 
+Find the request for the hidden directory. In your attack, you found a secret folder. Lets look at that interaction between these two machines.
+ 
+- How many requests were made to this directory? At what time and from which IP address(es)?
+
+
+- <img width="822" alt="Screen Shot 2022-01-10 at 4 13 19 PM" src="https://user-images.githubusercontent.com/56059854/148847365-3f9f3dc9-ae3c-44d0-8a86-03af20b45523.png">
+
+
+
+
+
+
+
