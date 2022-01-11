@@ -136,13 +136,35 @@ We should set alerts to detect rapid failed logins attempts. Alert is emailed to
 Account lockout for 10 minutes after 5 failed login attempts. Password strengthening is another process of reducing the risk of brute force attacks
 
 
+
 **Find the webdav connection**
 
 use your dashboard to answer the following questions
 
-How many requests were made? 
+- How many requests were made? 
 
 There were 96 requests made to access the web dav connection
+
+- which files were requested?
+
+the passwd.dav was found in the webdav folder, and the php file dropped the the folder
+
+- what kind of alarm would you set to detect such access in the future?
+
+Set an email alert to notify admin of unauthorized IP address attempts to connect to webdav. The threshold to set off the alarm should be 1 attempt.
+
+
+
+**Identify the reverse shell and meterpreter traffic.
+
+To
+
+
+
+
+
+
+
 
 
 
