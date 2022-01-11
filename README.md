@@ -100,7 +100,6 @@ Find the request for the hidden directory. In your attack, you found a secret fo
 
 The files requested were the files located in the /secret_folder/. they contained specific instructions on how to access the company's webdav server.
 
-<img width="814" alt="Screen Shot 2022-01-10 at 6 02 55 PM" src="https://user-images.githubusercontent.com/56059854/148858281-bde89ed4-0d8f-447e-a425-429348b5ff83.png">
 
 what kind of alarm would you set to detect this behavior in the future?
 
