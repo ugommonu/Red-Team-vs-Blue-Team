@@ -155,7 +155,7 @@ Set an email alert to notify admin of unauthorized IP address attempts to connec
 
 
 
-###Identify the reverse shell and meterpreter traffic###
+### Identify the reverse shell and meterpreter traffic
 
 To finish off the attack, you uploaded a php reverse shell and started a meterpreter shell session. Answer the following questions:
 
