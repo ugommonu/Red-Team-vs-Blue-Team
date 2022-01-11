@@ -69,7 +69,7 @@ Capture the flag
 
 ## Day 2
 
-**Identify the offensive traffic**
+### Identify the offensive traffic
 
 Identify the traffic between you machine and the web machine
 
@@ -107,7 +107,7 @@ what kind of alarm would you set to detect this behavior in the future?
 1. we can limit the traffic to the company's webdev server by whitelisting IP addresses that can perform such actions, while any other IP address is automatically blocked from accessing the server. we would set an email alarm to detect when a foreign IP address tries to gain access.
 
 
-**Identify the brute force attack**
+### Identify the brute force attack
 
 After identifying the hidden directory, you used Hydra to brute-force the target server.
 
@@ -137,7 +137,7 @@ Account lockout for 10 minutes after 5 failed login attempts. Password strengthe
 
 
 
-**Find the webdav connection**
+### Find the webdav connection
 
 use your dashboard to answer the following questions
 
