@@ -155,17 +155,21 @@ Set an email alert to notify admin of unauthorized IP address attempts to connec
 
 
 
-**Identify the reverse shell and meterpreter traffic.
+**Identify the reverse shell and meterpreter traffic**
 
-To
+To finish off the attack, you uploaded a php reverse shell and started a meterpreter shell session. Answer the following questions:
 
+- Can you identify traffic from the meterpreter session?
 
+Yes there is traffic coming from the Kali source IP over port 4444, the meterpreter session was established at the time if the attack.
 
+- what kinds of alarms would you set to detect this behavior in the future?
 
+Any attempt at an outbound connections from the target machine should have an email alert to admin. The threshold for this alarm should be one attempt. Reverse shell upload should not be occurring on the network.
 
+- Identify at leat one way to harden the vulnerable machine that would mitigate this attack.
 
-
-
+We can harden the system by blocking all external ip addresses from uploading any malicious file. We can modify the configuration on httpd.conf file to allow only traffic from ip addresses in the subnet.
 
 
 
