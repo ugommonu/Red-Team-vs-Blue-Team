@@ -10,11 +10,11 @@ For this project, I was tasked to act as an offensive security, Red Team Member,
 **Findings**
 
 ## Day 1 
-Discover the IP address of the Linux Webserver
+**Discover the IP address of the Linux Webserver**
 
 <img width="723" alt="Screen Shot 2021-12-07 at 8 47 18 PM" src="https://user-images.githubusercontent.com/56059854/148139007-c060f86b-6038-43f0-9605-2a2f1c22a964.png">
 
-Locate the hidden directory on the web
+**Locate the hidden directory on the web**
 
 - The Hidden directory was found by adjusting theURL of the company's Webpage to gain access to the hidden directory. Within the directory was a document giving instructions on how to access the company's webdav server.
 
@@ -96,7 +96,53 @@ Find the request for the hidden directory. In your attack, you found a secret fo
 - <img width="822" alt="Screen Shot 2022-01-10 at 4 13 19 PM" src="https://user-images.githubusercontent.com/56059854/148847365-3f9f3dc9-ae3c-44d0-8a86-03af20b45523.png">
 
 
+- which files were requested? What information did they contain?
 
+The files requested were the files located in the /secret_folder/. they contained specific instructions on how to access the company's webdav server.
+
+<img width="814" alt="Screen Shot 2022-01-10 at 6 02 55 PM" src="https://user-images.githubusercontent.com/56059854/148858281-bde89ed4-0d8f-447e-a425-429348b5ff83.png">
+
+what kind of alarm would you set to detect this behavior in the future?
+
+1. we can limit the traffic to the company's webdev server by whitelisting IP addresses that can perform such actions, while any other IP address is automatically blocked from accessing the server. we would set an email alarm to detect when a foreign IP address tries to gain access.
+
+
+**Identify the brute force attack**
+
+After identifying the hidden directory, you used Hydra to brute-force the target server.
+
+- Can you identify packets specifically from Hydra?
+
+<img width="828" alt="Screen Shot 2022-01-10 at 6 48 15 PM" src="https://user-images.githubusercontent.com/56059854/148861901-c68d10c3-6aac-4ac7-a119-64d61f720b6f.png">
+
+
+- How many request were made in the brute force attack?
+
+There were 15,330 hits made in the attack
+
+
+- How many requests had the attacker made before discovering the correct password in this one?
+
+15,328 hits came from hydra which is how many attempts it made before discovering the correct password.
+
+
+- What kind of alarm would you set to detect this behavior in the future and at what threshold?
+
+We should set alerts to detect rapid failed logins attempts. Alert is emailed to admin when 20 or more login attempts are made in a 2 minute period
+
+
+- Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+Account lockout for 10 minutes after 5 failed login attempts. Password strengthening is another process of reducing the risk of brute force attacks
+
+
+**Find the webdav connection**
+
+use your dashboard to answer the following questions
+
+How many requests were made? 
+
+There were 96 requests made to access the web dav connection
 
 
 
